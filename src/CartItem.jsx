@@ -5,6 +5,7 @@ import './CartItem.css';
 import ProductList from './ProductList';
 
 const CartItem = ({ onContinueShopping }) => {
+  const dispatch = useDispatch()
 
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
@@ -35,7 +36,7 @@ const CartItem = ({ onContinueShopping }) => {
     dispatch(removeItem)
   };
 
-  const handleCheckoutShopping = (e) => {
+  const handleCheckoutShopping = () => {
     alert('Functionality to be added for future reference');
   };
 
