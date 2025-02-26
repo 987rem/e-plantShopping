@@ -5,11 +5,10 @@ import './CartItem.css';
 import ProductList from './ProductList';
 
 const CartItem = ({ onContinueShopping }) => {
-  let total = 0
 
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
-    const total = 0;
+    let total = 0;
     parseFloat(item.cost.substring(1))
     cart.forEach((quantity, cost) => item.quantity * item.cost)
   };
@@ -42,7 +41,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
-    calculateTotalAmount()
+    let grandTotal = 0
   };
 
   return (
